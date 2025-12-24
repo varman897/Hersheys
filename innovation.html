@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Innovation | Hershey's</title>
+<link rel="stylesheet" href="navbar.css">
+
+<style>
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fffaf5;
+  color: #3e2723;
+  line-height: 1.6;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(rgba(62,39,35,0.85), rgba(62,39,35,0.85)),
+              url("innovation-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ---------- TEXT ---------- */
+p {
+  font-size: 1.05em;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* ---------- IMAGES ---------- */
+.center-img {
+  display: block;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ---------- CARDS ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: #5d4037;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2em;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="chocolate.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a class="active" href="innovation.html">Innovation</a></li>
+    <li><a href="about us.html">About</a></li>
+  </ul> 
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Innovation</h1>
+  <p>
+    Creating the future of chocolate through science,
+    sustainability, and better-for-you choices.
+  </p>
+</section>
+
+<!-- INNOVATION INTRO -->
+<section>
+  <div class="container">
+    <img src="Hershey-Logo.png" alt="Hershey Logo" class="center-img" width="220">
+
+    <p>
+      For more than 125 years, Hershey’s has perfected the taste people love.
+      Today, we continue to innovate—developing chocolate that tastes great
+      while offering healthier options so more people can enjoy it.
+    </p>
+  </div>
+</section>
+
+<!-- CARDS -->
+<section style="background-color:#f3e5d8;">
+  <div class="container">
+    <div class="card-grid">
+
+      <div class="card">
+        <h3>Health & Nutrition</h3>
+        <p>
+          Our scientists are exploring new recipes that reduce sugar
+          while keeping the flavor people expect from Hershey’s.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sustainability</h3>
+        <p>
+          We source cocoa from farms that use sustainable practices,
+          protect the environment, and treat workers fairly.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Future-Focused</h3>
+        <p>
+          Innovation helps us stay ahead, creating chocolate that
+          supports both people and the planet.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE -->
+<section>
+  <div class="container">
+    <p>
+      Our goal is simple: to make chocolate that makes people happy,
+      supports healthier lifestyles, and protects the world we share.
+    </p>
+
+    <img src="912QKRSZVML._AC_UF894,1000_QL80_.jpg" 
+         alt="Hershey innovation products"
+         class="center-img"
+         width="600">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2025 THE HERSHEY COMPANY. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>

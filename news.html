@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Newsroom | Hershey's</title>
+<link rel="stylesheet" href="navbar.css">
+
+<style>
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fffaf5;
+  color: #3e2723;
+  line-height: 1.6;
+}
+
+section {
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(rgba(62,39,35,0.85), rgba(62,39,35,0.85)),
+              url("news-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ---------- NEWS GRID ---------- */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ---------- NEWS CARD ---------- */
+.news-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card-content {
+  padding: 20px;
+}
+
+.news-card h3 {
+  margin-top: 0;
+  color: #5d4037;
+}
+
+.news-card p {
+  font-size: 0.95em;
+}
+
+/* ---------- TAG ---------- */
+.tag {
+  display: inline-block;
+  background-color: #d4a574;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  margin-bottom: 10px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2em;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="chocolate.html">Home</a></li>
+    <li><a class="active" href="news.html">News</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a href="about us.html">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Newsroom</h1>
+  <p>
+    Discover the latest stories, innovations, and announcements
+    from The Hershey Company.
+  </p>
+</section>
+
+<!-- NEWS -->
+<section>
+  <div class="container">
+    <h2 style="text-align:center;">Latest News</h2>
+
+    <div class="news-grid">
+
+      <!-- CARD 1 -->
+      <div class="news-card">
+        <img src="download.jpg" alt="Healthy products">
+        <div class="news-card-content">
+          <span class="tag">Health & Wellness</span>
+          <h3>Consumers Are Choosing Healthier Products — Hershey’s Is Ready</h3>
+          <p>
+            As consumer preferences shift toward better-for-you options,
+            Hershey’s continues to expand its portfolio to meet evolving needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="news-card">
+        <img src="herus-corp-blog-hersheys-caramel-retail-header.jpg" alt="Caramel bars">
+        <div class="news-card-content">
+          <span class="tag">Innovation</span>
+          <h3>Caramel Cracks the Code: Hershey’s Sweetest Seasonal Strategy</h3>
+          <p>
+            The launch of HERSHEY’S Milk Chocolate with Caramel helped drive
+            double-digit growth in the 2025 s’mores program.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="news-card">
+        <img src="newsroom-media-contacts.jpg" alt="Media contacts">
+        <div class="news-card-content">
+          <span class="tag">Company</span>
+          <h3>Explore Our Brands, People, and Expertise</h3>
+          <p>
+            From iconic brands to dedicated teams, Hershey’s continues to make
+            headlines across the globe.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="news-card">
+        <img src="lawsuit.jpg" alt="Legal update">
+        <div class="news-card-content">
+          <span class="tag">Legal Update</span>
+          <h3>Latest Legal Update Regarding Manufacturing Facilities</h3>
+          <p>
+            Recent claims involving wage and hour laws were reviewed and
+            ultimately dismissed by the court.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 THE HERSHEY COMPANY. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>

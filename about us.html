@@ -1,0 +1,274 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us | The Hershey Company</title>
+<link rel="stylesheet" href="navbar.css">
+
+<style>
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fffaf5;
+  color: #3e2723;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+section {
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  background: linear-gradient(rgba(62,39,35,0.8), rgba(62,39,35,0.8)),
+              url("chocolate-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero img {
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ---------- TEXT SECTIONS ---------- */
+.text-block p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.05em;
+}
+
+/* ---------- IMAGES ---------- */
+.center-img {
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- TIMELINE ---------- */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #d4a574;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) { left: 0; }
+.timeline-item:nth-child(even) { left: 50%; }
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: -11px;
+  background-color: white;
+  border: 4px solid #d4a574;
+  top: 25px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-item:nth-child(even)::after {
+  left: -11px;
+}
+
+.timeline-content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-content h3 {
+  color: #5d4037;
+  margin-top: 0;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 768px) {
+  .timeline::after { left: 20px; }
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+  .timeline-item:nth-child(even) { left: 0; }
+  .timeline-item::after { left: 8px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="chocolate.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="innovation.html">Innovation</a></li>
+    <li><a class="active" href="about us.html">About</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>About Us</h1>
+  <p>Moments of Goodness. A Legacy of Purpose. Chocolate Loved Around the World.</p>
+  <img src="Hershey-Logo.png" alt="Hershey Logo" width="300">
+</section>
+
+<!-- ABOUT -->
+<section class="text-block">
+  <div class="container">
+    <h2>Moments of Goodness</h2>
+    <p>
+      Hershey’s goal is to bring moments of happiness to people around the world
+      through our iconic chocolate. Our chocolate is made in Hershey,
+      Pennsylvania—home to Hershey’s Chocolate World—where visitors can explore
+      how our treats are crafted.
+    </p>
+    <p>
+      From classic chocolate bars to our famous Hershey’s Kisses, every product
+      is made with care, quality, and a commitment to joy.
+    </p>
+
+    <h2>Leadership</h2>
+    <p>
+      Kirk Tanner is the CEO of The Hershey Company, leading the organization with
+      a focus on innovation, responsibility, and growth.
+    </p>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="text-block">
+  <div class="container">
+    <h2>Milton Hershey: A Legacy of Goodness</h2>
+    <p>
+      Milton S. Hershey was more than a chocolatier—he was a visionary,
+      philanthropist, and innovator. His life’s work was driven by compassion,
+      perseverance, and service to others.
+    </p>
+
+    <img src="milton hershey.webp" alt="Milton Hershey" class="center-img" width="400">
+
+    <p>
+      He founded schools, community centers, and cultural institutions that
+      continue to thrive today. His belief that business should serve humanity
+      still guides The Hershey Company more than 125 years later.
+    </p>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <div class="container">
+    <h2 style="text-align:center;">A Story as Iconic as the Chocolate Bar</h2>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1857</h3>
+        <p>Milton S. Hershey is born in Derry Township, Pennsylvania.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1872</h3>
+        <p>Begins his candy-making apprenticeship at age 14.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1886</h3>
+        <p>Founds the Lancaster Caramel Company.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1894</h3>
+        <p>Establishes The Hershey Chocolate Company.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1909</h3>
+        <p>Founds the Hershey Industrial School.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>1945</h3>
+        <p>Milton Hershey passes away at age 88, leaving a lasting legacy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 THE HERSHEY COMPANY. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
